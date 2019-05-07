@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDAO", "CadastroDAO\CadastroDAO.csproj", "{9C7F2F45-84DF-4068-8A5F-C458473F37C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7F2F45-84DF-4068-8A5F-C458473F37C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7F2F45-84DF-4068-8A5F-C458473F37C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7F2F45-84DF-4068-8A5F-C458473F37C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7F2F45-84DF-4068-8A5F-C458473F37C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F5831A3-A779-474D-8CFB-CAE2608EFD8B}
+	EndGlobalSection
+EndGlobal
