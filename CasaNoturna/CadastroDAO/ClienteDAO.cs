@@ -8,7 +8,7 @@ using CadastroMODEL;
 
 namespace CadastroDAO
 {
-    class ClienteDAO
+    public class ClienteDAO
     {
         private SqlConnection conexao;
         private List<ClienteMODEL> repositório;

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroFORM", "View\CadastroFORM.csproj", "{2DAA6BBC-54C5-4C8B-80E4-8918C63035B8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroMODEL", "CadastroMODEL\CadastroMODEL.csproj", "{CAB12DE1-A553-475B-803E-46D2720F2679}"
 EndProject
