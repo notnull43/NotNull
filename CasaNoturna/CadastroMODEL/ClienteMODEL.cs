@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CadastroMODEL
 {
     public class ClienteMODEL
     {
-        #region ATRIBUTOS DOS CLIENTES
+        #region ATRIBUTOS DO CLIENTE
         private int id;
         private string nome;
         private int telefone;
@@ -19,7 +23,7 @@ namespace CadastroMODEL
         private string sexo;
         #endregion
 
-        #region PROPRIEDADES DOS CLIETES
+        #region PROPRIEDADES DO CLIENTE
         public int Id { get => id; set => id = value; }
         public string Nome { get => nome; set => nome = value; }
         public int Telefone { get => telefone; set => telefone = value; }
@@ -31,8 +35,7 @@ namespace CadastroMODEL
         public int DataNascimento { get => dataNascimento; set => dataNascimento = value; }
         public int Cpf { get => cpf; set => cpf = value; }
         public int Rg { get => rg; set => rg = value; }
-        public string Sexo { get => sexo; set => sexo = value; } 
+        public string Sexo { get => sexo; set => sexo = value; }
         #endregion
-
-    } 
+    }
 }
