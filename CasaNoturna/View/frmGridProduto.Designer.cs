@@ -1,6 +1,6 @@
 ﻿namespace CadastroFORM
 {
-    partial class frmGridCliente
+    partial class frmGridProduto
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmGridCliente
+            // frmGridProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 449);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "frmGridCliente";
-            this.Text = "Controle de clientes";
-            this.Load += new System.EventHandler(this.frmGridCliente_Load);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmGridProduto";
+            this.Text = "frmGridProduto";
             this.ResumeLayout(false);
 
         }

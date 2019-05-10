@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CadastroFORM
 {
-    public partial class frmGridCliente : Form
+    public partial class frmGridProduto : Form
     {
-        public frmGridCliente()
+        public frmGridProduto()
         {
             InitializeComponent();
-        }
-
-        private void frmGridCliente_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
