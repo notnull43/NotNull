@@ -36,6 +36,6 @@ namespace CadastroMODEL
         public int Cpf { get => cpf; set => cpf = value; }
         public int Rg { get => rg; set => rg = value; }
         public string Sexo { get => sexo; set => sexo = value; }
-        #endregion
+        
     }
 }
