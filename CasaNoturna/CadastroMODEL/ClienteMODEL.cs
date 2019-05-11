@@ -8,7 +8,7 @@ namespace CadastroMODEL
 {
     public class ClienteMODEL
     {
-        #region ATRIBUTOS DO CLIENTE
+       
         private int id;
         private string nome;
         private int telefone;
@@ -21,9 +21,9 @@ namespace CadastroMODEL
         private int cpf;
         private int rg;
         private string sexo;
-        #endregion
+    
 
-        #region PROPRIEDADES DO CLIENTE
+       
         public int Id { get => id; set => id = value; }
         public string Nome { get => nome; set => nome = value; }
         public int Telefone { get => telefone; set => telefone = value; }
