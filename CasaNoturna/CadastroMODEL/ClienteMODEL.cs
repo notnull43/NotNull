@@ -17,7 +17,7 @@ namespace CadastroMODEL
         private string bairro;
         private string municipio;
         private string estado;
-        private int dataNascimento;
+        private DateTime dataNascimento;
         private int cpf;
         private int rg;
         private string sexo;
@@ -32,7 +32,7 @@ namespace CadastroMODEL
         public string Bairro { get => bairro; set => bairro = value; }
         public string Municipio { get => municipio; set => municipio = value; }
         public string Estado { get => estado; set => estado = value; }
-        public int DataNascimento { get => dataNascimento; set => dataNascimento = value; }
+        public DateTime DataNascimento { get => dataNascimento; set => dataNascimento = value; }
         public int Cpf { get => cpf; set => cpf = value; }
         public int Rg { get => rg; set => rg = value; }
         public string Sexo { get => sexo; set => sexo = value; }
