@@ -83,7 +83,7 @@ namespace CadastroDAO
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw;

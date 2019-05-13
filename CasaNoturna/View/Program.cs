@@ -16,7 +16,7 @@ namespace CadastroFORM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGridCliente());
+            Application.Run(new frmHome());
         }
     }
 }

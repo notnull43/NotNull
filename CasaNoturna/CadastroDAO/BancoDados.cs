@@ -31,7 +31,7 @@ namespace CadastroDAO
         {
             get
             {
-                clienteDAO = clienteDAO ?? new ClienteDAO(conexao);
+                clienteDAO = clienteDAO ?? new ClienteDAO(Conexao);
                 return clienteDAO;
             }
             set { clienteDAO = value; }
