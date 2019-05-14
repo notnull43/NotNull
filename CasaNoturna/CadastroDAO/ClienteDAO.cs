@@ -31,21 +31,21 @@ namespace CadastroDAO
             bool retorno;
             try
             {
-                cmd.Parameters.AddWithValue("@NamCli", cliente.Nome);
-                cmd.Parameters.AddWithValue("@AdrCli", cliente.Logradouro);
-                cmd.Parameters.AddWithValue("@NumCli", cliente.Numero);
-                cmd.Parameters.AddWithValue("@DisCli", cliente.Bairro);
-                cmd.Parameters.AddWithValue("@CitCli", cliente.Municipio);
-                cmd.Parameters.AddWithValue("@StaCli", cliente.Estado);
-                cmd.Parameters.AddWithValue("@BirthCli", cliente.DataNascimento);
-                cmd.Parameters.AddWithValue("@CelCli", cliente.Telefone);
-                cmd.Parameters.AddWithValue("@CPFCli", cliente.Cpf);
-                cmd.Parameters.AddWithValue("@RGCli", cliente.Rg);
-                cmd.Parameters.AddWithValue("@SEXO", cliente.Sexo);
+                cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
+                cmd.Parameters.AddWithValue("@Logradouro", cliente.Logradouro);
+                cmd.Parameters.AddWithValue("@Numero", cliente.Numero);
+                cmd.Parameters.AddWithValue("@Bairro", cliente.Bairro);
+                cmd.Parameters.AddWithValue("@Municipio", cliente.Municipio);
+                cmd.Parameters.AddWithValue("@Estado", cliente.Estado);
+                cmd.Parameters.AddWithValue("@DataNascimento", cliente.DataNascimento);
+                cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                cmd.Parameters.AddWithValue("@Cpf", cliente.Cpf);
+                cmd.Parameters.AddWithValue("@Rg", cliente.Rg);
+                cmd.Parameters.AddWithValue("@Sexo", cliente.Sexo);
                 cmd.ExecuteNonQuery();
                 retorno = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 retorno = false;
             }
@@ -69,16 +69,16 @@ namespace CadastroDAO
                         {
                             Id = Convert.ToInt32(reader["IdCli"].ToString()),
                             Nome = reader["NamCli"].ToString(),
-                            Telefone = int.Parse(reader["CelCli"].ToString()),
+                            Telefone = reader["CelCli"].ToString(),
                             Logradouro = reader["AdrCli"].ToString(),
-                            Numero = int.Parse(reader["NumCli"].ToString()),
+                            Numero =reader["NumCli"].ToString(),
                             Bairro = reader["DisCli"].ToString(),
                             Municipio = reader["CitCli"].ToString(),
                             Estado = reader["StaCli"].ToString(),
                             DataNascimento = DateTime.Parse(reader["BirthCli"].ToString()),
-                            Cpf = int.Parse(reader["CPFCli"].ToString()),
-                            Rg = int.Parse(reader["RGCli"].ToString()),
-                            Sexo = reader["SEXO"].ToString()                                                                                 
+                            Cpf = reader["CPFCli"].ToString(),
+                            Rg = reader["RGCli"].ToString(),
+                            Sexo = char.Parse(reader["SEXO"].ToString())                                                                                
                         });
                     }
                 }
@@ -102,7 +102,7 @@ namespace CadastroDAO
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conexao;
-            cmd.CommandText = @"SELECT * FROM Clients WHERE IdCli = @Id";
+            cmd.CommandText = @"SELECT * FROM Clients WHERE IdCli = @IdCli";
 
             ClienteMODEL cliente = null;
 
@@ -118,16 +118,16 @@ namespace CadastroDAO
                         {
                             Id = Convert.ToInt32(reader["IdCli"].ToString()),
                             Nome = reader["NamCli"].ToString(),
-                            Telefone = int.Parse(reader["CelCli"].ToString()),
+                            Telefone = reader["CelCli"].ToString(),
                             Logradouro = reader["AdrCli"].ToString(),
-                            Numero = int.Parse(reader["NumCli"].ToString()),
+                            Numero = reader["NumCli"].ToString(),
                             Bairro = reader["DisCli"].ToString(),
                             Municipio = reader["CitCli"].ToString(),
                             Estado = reader["StaCli"].ToString(),
                             DataNascimento = DateTime.Parse(reader["BirthCli"].ToString()),
-                            Cpf = int.Parse(reader["CPFCli"].ToString()),
-                            Rg = int.Parse(reader["RGCli"].ToString()),
-                            Sexo = reader["SEXO"].ToString()
+                            Cpf = reader["CPFCli"].ToString(),
+                            Rg = reader["RGCli"].ToString(),
+                            Sexo = char.Parse(reader["SEXO"].ToString())
                         };
 
                     }
@@ -163,22 +163,23 @@ namespace CadastroDAO
             bool retorno;
             try
             {
-                cmd.Parameters.AddWithValue("@NamCli", cliente.Nome);
-                cmd.Parameters.AddWithValue("@AdrCli", cliente.Logradouro);
-                cmd.Parameters.AddWithValue("@NumCli", cliente.Numero);
-                cmd.Parameters.AddWithValue("@DisCli", cliente.Bairro);
-                cmd.Parameters.AddWithValue("@CitCli", cliente.Municipio);
-                cmd.Parameters.AddWithValue("@StaCli", cliente.Estado);
-                cmd.Parameters.AddWithValue("@BirthCli", cliente.DataNascimento);
-                cmd.Parameters.AddWithValue("@CelCli", cliente.Telefone);
-                cmd.Parameters.AddWithValue("@CPFCli", cliente.Cpf);
-                cmd.Parameters.AddWithValue("@RGCli", cliente.Rg);
-                cmd.Parameters.AddWithValue("@SEXO", cliente.Sexo);
+                cmd.Parameters.AddWithValue("@Id", cliente.Id);
+                cmd.Parameters.AddWithValue("@Nome", cliente.Nome);
+                cmd.Parameters.AddWithValue("@Logradouro", cliente.Logradouro);
+                cmd.Parameters.AddWithValue("@Numero", cliente.Numero);
+                cmd.Parameters.AddWithValue("@Bairro", cliente.Bairro);
+                cmd.Parameters.AddWithValue("@Municipio", cliente.Municipio);
+                cmd.Parameters.AddWithValue("@Estado", cliente.Estado);
+                cmd.Parameters.AddWithValue("@DataNascimento", cliente.DataNascimento);
+                cmd.Parameters.AddWithValue("@Telefone", cliente.Telefone);
+                cmd.Parameters.AddWithValue("@Cpf", cliente.Cpf);
+                cmd.Parameters.AddWithValue("@Rg", cliente.Rg);
+                cmd.Parameters.AddWithValue("@Sexo", cliente.Sexo);
                 cmd.ExecuteNonQuery();
 
                 retorno =  true;
             }
-            catch (Exception)
+            catch (Exception ex)
             { retorno = false; }
 
             return retorno;

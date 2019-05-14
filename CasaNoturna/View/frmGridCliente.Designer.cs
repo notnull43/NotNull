@@ -33,12 +33,12 @@
             this.txtPesquisarNome = new System.Windows.Forms.TextBox();
             this.lblPesquisaNome = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.btnPesquisarCadastro = new System.Windows.Forms.Button();
-            this.btnExcluirCadastro = new System.Windows.Forms.Button();
-            this.btnNovoCadastro = new System.Windows.Forms.Button();
             this.tbcId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbcNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbcTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPesquisarCadastro = new System.Windows.Forms.Button();
+            this.btnExcluirCadastro = new System.Windows.Forms.Button();
+            this.btnNovoCadastro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +85,30 @@
             this.dgvClientes.TabIndex = 14;
             this.dgvClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellDoubleClick);
             // 
+            // tbcId
+            // 
+            this.tbcId.DataPropertyName = "Id";
+            this.tbcId.HeaderText = "Id";
+            this.tbcId.Name = "tbcId";
+            this.tbcId.ReadOnly = true;
+            this.tbcId.Visible = false;
+            // 
+            // tbcNome
+            // 
+            this.tbcNome.DataPropertyName = "Nome";
+            this.tbcNome.HeaderText = "Nome";
+            this.tbcNome.Name = "tbcNome";
+            this.tbcNome.ReadOnly = true;
+            this.tbcNome.Width = 450;
+            // 
+            // tbcTelefone
+            // 
+            this.tbcTelefone.DataPropertyName = "Telefone";
+            this.tbcTelefone.HeaderText = "Telefone";
+            this.tbcTelefone.Name = "tbcTelefone";
+            this.tbcTelefone.ReadOnly = true;
+            this.tbcTelefone.Width = 180;
+            // 
             // btnPesquisarCadastro
             // 
             this.btnPesquisarCadastro.Location = new System.Drawing.Point(521, 11);
@@ -118,36 +142,12 @@
             this.btnNovoCadastro.UseVisualStyleBackColor = true;
             this.btnNovoCadastro.Click += new System.EventHandler(this.btnNovoCadastro_Click);
             // 
-            // tbcId
-            // 
-            this.tbcId.DataPropertyName = "Id";
-            this.tbcId.HeaderText = "Id";
-            this.tbcId.Name = "tbcId";
-            this.tbcId.ReadOnly = true;
-            this.tbcId.Visible = false;
-            // 
-            // tbcNome
-            // 
-            this.tbcNome.DataPropertyName = "Nome";
-            this.tbcNome.HeaderText = "Nome";
-            this.tbcNome.Name = "tbcNome";
-            this.tbcNome.ReadOnly = true;
-            this.tbcNome.Width = 450;
-            // 
-            // tbcTelefone
-            // 
-            this.tbcTelefone.DataPropertyName = "Telefone";
-            this.tbcTelefone.HeaderText = "Telefone";
-            this.tbcTelefone.Name = "tbcTelefone";
-            this.tbcTelefone.ReadOnly = true;
-            this.tbcTelefone.Width = 180;
-            // 
             // frmGridCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1134, 446);
+            this.ClientSize = new System.Drawing.Size(713, 446);
             this.Controls.Add(this.btnClientesCadastrados);
             this.Controls.Add(this.txtPesquisarNome);
             this.Controls.Add(this.lblPesquisaNome);

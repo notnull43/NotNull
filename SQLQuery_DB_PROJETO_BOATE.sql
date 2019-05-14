@@ -3,7 +3,7 @@ GO
 
 USE [DB_PROJETO_BOATE]
 GO
-
+drop table Clients
 CREATE TABLE Clients
 (
 	IdCli int identity primary key,
@@ -17,7 +17,7 @@ CREATE TABLE Clients
 	CelCli nvarchar(15),
 	CPFCli nvarchar(15),
 	RGCli nvarchar(15),
-	SEXO bit,
+	SEXO nchar(1),
 	IdProd int,
 )
 

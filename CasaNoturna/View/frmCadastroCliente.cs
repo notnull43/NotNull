@@ -27,11 +27,11 @@ namespace CadastroFORM
             this.codigo = codigo;
             var cliente = BancoDados.Clientes.Consultar(codigo);
             txtNome.Text = cliente.Nome;
-            txtSexo.Text = cliente.Sexo;
+            txtSexo.Text = cliente.Sexo.ToString();
             txtDataNascimento.Text = cliente.DataNascimento.ToString();
             txtCpf.Text = cliente.Cpf.ToString();
             txtRg.Text = cliente.Rg.ToString();
-            txtTelefone.Text = cliente.ToString();
+            txtTelefone.Text = cliente.Telefone.ToString();
             txtLogradouro.Text = cliente.Logradouro;
             txtNumero.Text = cliente.Numero.ToString();
             txtBairro.Text = cliente.Bairro;
@@ -66,13 +66,13 @@ namespace CadastroFORM
             {
                 ClienteMODEL cliente = new ClienteMODEL();
                 cliente.Nome = txtNome.Text;
-                cliente.Sexo = txtSexo.Text;
+                cliente.Sexo = Convert.ToChar(txtSexo.Text);
                 cliente.DataNascimento = Convert.ToDateTime(txtDataNascimento.Text);
-                cliente.Cpf = Convert.ToInt32(txtCpf.Text);
-                cliente.Rg = Convert.ToInt32(txtRg.Text);
-                cliente.Telefone = Convert.ToInt32(txtTelefone.Text);
+                cliente.Cpf = txtCpf.Text;
+                cliente.Rg = txtRg.Text;
+                cliente.Telefone = txtTelefone.Text;
                 cliente.Logradouro = txtLogradouro.Text;
-                cliente.Numero = Convert.ToInt32(txtNumero.Text);
+                cliente.Numero = txtNumero.Text;
                 cliente.Bairro = txtBairro.Text;
                 cliente.Municipio = txtMunicipio.Text;
                 cliente.Estado = cbxEstado.Text;
