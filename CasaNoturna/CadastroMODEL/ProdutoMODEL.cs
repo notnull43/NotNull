@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace CadastroMODEL
 {
-    class ProdutoMODEL
+    public class ProdutoMODEL
     {
         #region ATRIBUTOS DO PRODUTO
-        private int codigo;
+        private int id;
         private string categoria;
         private string nome;
         private string fornecedor;
-        private int precoCusto;
-        private int precoVenda;
+        private double precoCusto;
+        private double precoVenda;
         private int estoque;
         #endregion
 
         #region PROPRIEDADES DO PRODUTO
-        public int Codigo { get => codigo; set => codigo = value; }
+        public int Id { get => id; set => id = value; }
         public string Categoria { get => categoria; set => categoria = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Fornecedor { get => fornecedor; set => fornecedor = value; }
-        public int PrecoCusto { get => precoCusto; set => precoCusto = value; }
-        public int PrecoVenda { get => precoVenda; set => precoVenda = value; }
+        public double PrecoCusto { get => precoCusto; set => precoCusto = value; }
+        public double PrecoVenda { get => precoVenda; set => precoVenda = value; }
         public int Estoque { get => estoque; set => estoque = value; }
         #endregion
     }

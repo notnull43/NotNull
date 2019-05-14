@@ -45,7 +45,7 @@ namespace CadastroDAO
                 cmd.ExecuteNonQuery();
                 retorno = true;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 retorno = false;
             }
@@ -83,7 +83,7 @@ namespace CadastroDAO
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 throw;
