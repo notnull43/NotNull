@@ -98,10 +98,5 @@ namespace CadastroFORM
         {
             this.Close();
         }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
