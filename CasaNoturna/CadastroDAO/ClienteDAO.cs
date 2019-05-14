@@ -195,7 +195,7 @@ namespace CadastroDAO
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conexao;
-            cmd.CommandText = "DELETE FROM Clients WHERE IdCli = @Id";
+            cmd.CommandText = "DELETE FROM Clients WHERE IdCli = @IdCli";
             bool retorno;
 
             try
