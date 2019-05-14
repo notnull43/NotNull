@@ -41,7 +41,7 @@ namespace CadastroFORM
 
         private void frmCadastroCliente_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

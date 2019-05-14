@@ -33,12 +33,12 @@
             this.txtPesquisarNome = new System.Windows.Forms.TextBox();
             this.lblPesquisaNome = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.tbcCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbcNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tbcTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPesquisarCadastro = new System.Windows.Forms.Button();
             this.btnExcluirCadastro = new System.Windows.Forms.Button();
             this.btnNovoCadastro = new System.Windows.Forms.Button();
+            this.tbcId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbcNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbcTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.dgvClientes.AllowUserToDeleteRows = false;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tbcCodigo,
+            this.tbcId,
             this.tbcNome,
             this.tbcTelefone});
             this.dgvClientes.Location = new System.Drawing.Point(16, 38);
@@ -84,30 +84,6 @@
             this.dgvClientes.Size = new System.Drawing.Size(682, 226);
             this.dgvClientes.TabIndex = 14;
             this.dgvClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellDoubleClick);
-            // 
-            // tbcCodigo
-            // 
-            this.tbcCodigo.DataPropertyName = "Codigo";
-            this.tbcCodigo.HeaderText = "Código";
-            this.tbcCodigo.Name = "tbcCodigo";
-            this.tbcCodigo.ReadOnly = true;
-            this.tbcCodigo.Visible = false;
-            // 
-            // tbcNome
-            // 
-            this.tbcNome.DataPropertyName = "Nome";
-            this.tbcNome.HeaderText = "Nome";
-            this.tbcNome.Name = "tbcNome";
-            this.tbcNome.ReadOnly = true;
-            this.tbcNome.Width = 450;
-            // 
-            // tbcTelefone
-            // 
-            this.tbcTelefone.DataPropertyName = "Telefone";
-            this.tbcTelefone.HeaderText = "Telefone";
-            this.tbcTelefone.Name = "tbcTelefone";
-            this.tbcTelefone.ReadOnly = true;
-            this.tbcTelefone.Width = 180;
             // 
             // btnPesquisarCadastro
             // 
@@ -142,6 +118,30 @@
             this.btnNovoCadastro.UseVisualStyleBackColor = true;
             this.btnNovoCadastro.Click += new System.EventHandler(this.btnNovoCadastro_Click);
             // 
+            // tbcId
+            // 
+            this.tbcId.DataPropertyName = "Id";
+            this.tbcId.HeaderText = "Id";
+            this.tbcId.Name = "tbcId";
+            this.tbcId.ReadOnly = true;
+            this.tbcId.Visible = false;
+            // 
+            // tbcNome
+            // 
+            this.tbcNome.DataPropertyName = "Nome";
+            this.tbcNome.HeaderText = "Nome";
+            this.tbcNome.Name = "tbcNome";
+            this.tbcNome.ReadOnly = true;
+            this.tbcNome.Width = 450;
+            // 
+            // tbcTelefone
+            // 
+            this.tbcTelefone.DataPropertyName = "Telefone";
+            this.tbcTelefone.HeaderText = "Telefone";
+            this.tbcTelefone.Name = "tbcTelefone";
+            this.tbcTelefone.ReadOnly = true;
+            this.tbcTelefone.Width = 180;
+            // 
             // frmGridCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,11 +155,7 @@
             this.Controls.Add(this.btnPesquisarCadastro);
             this.Controls.Add(this.btnExcluirCadastro);
             this.Controls.Add(this.btnNovoCadastro);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "frmGridCliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Controle de clientes";
             this.Load += new System.EventHandler(this.frmGridCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
@@ -175,11 +171,11 @@
         private System.Windows.Forms.TextBox txtPesquisarNome;
         private System.Windows.Forms.Label lblPesquisaNome;
         private System.Windows.Forms.DataGridView dgvClientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tbcCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tbcNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tbcTelefone;
         private System.Windows.Forms.Button btnPesquisarCadastro;
         private System.Windows.Forms.Button btnExcluirCadastro;
         private System.Windows.Forms.Button btnNovoCadastro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tbcId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tbcNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tbcTelefone;
     }
 }
